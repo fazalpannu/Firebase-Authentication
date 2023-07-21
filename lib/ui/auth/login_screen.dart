@@ -1,4 +1,5 @@
 import 'package:firebase/post/post_scren.dart';
+import 'package:firebase/ui/auth/forhetpassword.dart';
 import 'package:firebase/ui/auth/sign_up.dart';
 import 'package:firebase/utils/utils.dart';
 import 'package:firebase/widget/round_button.dart';
@@ -113,6 +114,26 @@ class _loginscreenState extends State<loginscreen> {
                   }
                 },
                 loading: loading,
+              ),
+              SizedBox(
+                height: 30,
+              ),
+              Align(
+                alignment: Alignment.bottomRight,
+                child: TextButton(
+                    onPressed: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => forgetpassword(),
+                          ));
+                    },
+                    child: Text(
+                      'forget password',
+                      style: TextStyle(
+                        decoration: TextDecoration.underline,
+                      ),
+                    )),
               ),
               SizedBox(
                 height: 30,

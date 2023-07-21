@@ -43,6 +43,9 @@ dependencies:
   fluttertoast: ^8.2.2
   animated_text_kit: ^4.2.2
   google_fonts: ^5.1.0
+  firebase_database: ^10.2.4
+  get: ^4.6.5
+  image_picker: ^1.0.1
 dev_dependencies:
   flutter_test:
     sdk: flutter
